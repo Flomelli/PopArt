@@ -82,10 +82,6 @@ button {
     right: 9px;
 }
 
-.liked {
-    background-image: url(/images/filledin.png);
-}
-
 .heartButton {
     position: relative;
 }
