@@ -2,6 +2,7 @@
 body {
     font-family: 'Quicksand';
     font-size: 30px;
+    position: relative;
 }
 
 p {
@@ -24,6 +25,10 @@ p {
     margin-right: 1rem;
 }
 
+.locationText {
+    border-bottom: solid black thick;
+}
+
 .card1,
 .card2,
 .card3,
@@ -34,6 +39,12 @@ p {
     border-radius: 10.0496px;
     height: 100%;
     margin: 3rem 2rem 3rem 2rem;
+}
+
+.card4 {
+    position: absolute;
+    height: 380px;
+    margin-top: 0px;
 }
 
 .cardImg {
@@ -54,19 +65,56 @@ button {
     height: 100px;
 }
 
-.navbar {
-    position: static;
-    width: 100%;
-}
-
 .nav {
     display: flex;
     justify-content: space-evenly;
-    background-image: url("../images/navbar.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    align-items: flex-end;
+    padding-top: 21px;
 }
 
 .navImg {
     width: 100%;
+}
+
+.heart {
+    position: absolute;
+    bottom: 15px;
+    right: 9px;
+}
+
+.heartButton {
+    position: relative;
+}
+
+.homeCircle {
+    background-color: #092C4C;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postEvent,
+.search,
+.myEvents,
+.profile {
+    padding-top: 53px;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    bottom: -498px;
+    height: 267px;
+    background-image: url(../images/ActualNavBar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h3 {
+    font-size: 35px;
+    color: #9DB2CE;
 }
