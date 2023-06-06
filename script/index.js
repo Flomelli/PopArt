@@ -1,11 +1,11 @@
 let liked = false;
-const likeButton = document.getElementById('likeButton');
+const heartImg = document.querySelector('.heart');
 
 function toggleLike() {
     liked = !liked;
     if (liked) {
-        likeButton.classList.add('liked');
+        heartImg.src = './images/filledin.png';
     } else {
-        likeButton.classList.remove('liked');
+        heartImg.src = "./images/heart.png";
     }
 }
