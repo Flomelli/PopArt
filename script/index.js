@@ -1,5 +1,5 @@
 let liked = false;
-const heartImg = document.querySelector('.heart');
+let heartImg = document.querySelector('.heart');
 
 function toggleLike() {
     liked = !liked;
