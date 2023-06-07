@@ -4,8 +4,8 @@ let heartImg = document.querySelector('.heart');
 function toggleLike() {
     liked = !liked;
     if (liked) {
-        heart.src = './images/filledheart.png';
+        heartImg.src = '../images/A.png';
     } else {
-        heart.src = './images/heart.png';
+        heartImg.src = '../images/heart.png';
     }
 }
