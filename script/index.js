@@ -1,6 +1,8 @@
-const heart = document.querySelector(".heart");
-const animationHeart = document.querySelector(".animationHeart");
+const hearts = document.querySelectorAll(".heart");
+const animationHearts = document.querySelectorAll(".animationHeart");
 
-heart.addEventListener('click', () => {
-    animationHeart.classList.add('animation');
+hearts.forEach((heart, index) => {
+    heart.addEventListener('click', () => {
+        animationHearts[index].classList.add('animation');
+    });
 });
