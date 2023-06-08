@@ -1,11 +1,6 @@
-let liked = false;
-let heartImg = document.querySelector('.heart');
+const heart = document.querySelector(".heart");
+const animationHeart = document.querySelector(".animationHeart");
 
-function toggleLike() {
-    liked = !liked;
-    if (liked) {
-        heartImg.src = '../images/filledheart.png';
-    } else {
-        heartImg.src = '../images/heart.png';
-    }
-}
+heart.addEventListener('click', () => {
+    animationHeart.classList.add('animation');
+});
